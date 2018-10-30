@@ -15,7 +15,7 @@ class ExpatConan(ConanFile):
     generators = "cmake"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
-    default_options = "shared=False"
+    default_options = "shared=True"
 
     def source(self):
         base_url = "https://github.com/libexpat/libexpat/archive"
