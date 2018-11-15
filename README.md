@@ -1,8 +1,7 @@
 ## Package Status
-
-| Bintray | Appveyor | Travis | 
-|---------|-----------|--------|
-|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/expat%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/expat%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/gx7uih0bu4qtlhu5?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-expat)|[![Build Status](https://travis-ci.org/bincrafters/conan-expat.svg?branch=stable%2F2.2.5)](https://travis-ci.org/bincrafters/conan-expat)|
+| Windows | Linux |
+|:------:|:------:|
+| [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/conanos/expat?svg=true)](https://ci.appveyor.com/project/Mingyiz/expat) |[![Linux Build Status](https://api.travis-ci.org/conanos/expat.svg)](https://travis-ci.org/conanos/expat)|
 
 ## Conan.io Information
 
