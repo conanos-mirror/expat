@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from conans import ConanFile, CMake, tools
-
+import shutil, os
 
 class ExpatConan(ConanFile):
     name = "expat"
@@ -39,6 +39,9 @@ class ExpatConan(ConanFile):
 
     def package(self):
         self.copy("FindEXPAT.cmake", ".", ".")
+        if self.settings.os == "Windows" and self.settings.build_type == "Debug":
+            shutil.copy2(os.path.join("lib", "expatd.lib"), 
+                         os.path.join(self.package_folder, "lib", "expat.lib"))
 
     def package_info(self):
         self.cpp_info.libs = ["expatd" if self.settings.build_type == "Debug" else "expat"]
