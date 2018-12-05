@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from conans import ConanFile, CMake, tools
+from conanos.build import config_scheme
 import shutil, os
 
 class ExpatConan(ConanFile):
@@ -50,3 +51,5 @@ class ExpatConan(ConanFile):
 
     def configure(self):
         del self.settings.compiler.libcxx
+        
+        config_scheme(self)
